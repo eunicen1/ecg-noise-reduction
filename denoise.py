@@ -1,6 +1,8 @@
 import numpy as np
 from scipy.stats import iqr 
 
+#~O(n log n) runtime
+
 # denoising performed using FFT and FFT^-1 channels
 # Input: 1-d array
 # Output: 1-d denoised array by way of FFT + InvFFT
