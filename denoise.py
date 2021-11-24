@@ -15,4 +15,4 @@ def denoise(sig):
     #remove noise
     pwrSpec2 = pwrSpec*(pwrSpec > highlier)
     F2 = F*(pwrSpec > highlier)
-    return np.fft.ifft(F2) #cleaned signal output
+    return np.real(np.fft.ifft(F2)) #cleaned signal output
